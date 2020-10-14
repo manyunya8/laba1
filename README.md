@@ -1,0 +1,1 @@
+The program determines the number of decimal digits required to represent a given number.
