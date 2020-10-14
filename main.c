@@ -2,26 +2,19 @@
 
 int main()
 {
-	int n, k, q;
+	int n, k;
 	k = 0;
 	printf("Enter the number: ");
 	scanf("%d", &n);
-	printf("Enter q: ");
-	scanf("%d", &q);
-	if (q < 2)
-	{
-		printf("Invalid discharge");
-		return 1;
-	}
 	if (n == 0) 
 	{
 		k++;
 	}
 	while (n != 0)
 	{
-		n = n / q;
+		n = n / 10;
 		k ++;
 	}
-	printf("Count of digits in the number: %d", k);
+	printf("Count of decimal digits in the number: %d", k);
 	return 0;
 }
